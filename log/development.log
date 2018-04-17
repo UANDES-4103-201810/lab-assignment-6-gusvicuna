@@ -1412,3 +1412,587 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-17 10:40:34 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 1329ms (Views: 1324.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 10:40:43 -0300
+  
+SyntaxError (/home/gus/Desktop/uandes/web/lab6/lab-assignment-6-gusvicuna/app/controllers/registrations_controller.rb:12: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/registrations_controller.rb:12: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2018-04-17 10:41:15 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 20.8ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 10:41:18 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 53ms (Views: 51.4ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:41:41 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g8BpTx7qo6Jr292cTCAvRdlsy4s3PtiduGiDx5W/hH5P6zzm1CgHdV2ymZ7zeMV0K+mYvj/tBXAAB9acN5iISg==", "registrations"=>{"name"=>"Gustavo", "last_name"=>"Vicuña", "email"=>"sadfsaf@fdsf.cl", "phone"=>"6159159", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 18ms
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1)):
+  
+app/controllers/registrations_controller.rb:11:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-17 10:42:56 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 22.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 10:42:58 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 21ms (Views: 19.5ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:43:04 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3p9K/AC5WAjKcAsrsK37irRck9CRVJDzL3WMeG77xLEStB9Vynv83/wZTykP9RG7RtnA5ZmHTR6XGtkjzNzIhQ==", "registrations"=>{"name"=>"gdsaga", "last_name"=>"asdfsafa", "email"=>"dfsafsaf", "phone"=>"asdfsafda", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 5ms
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/registrations_controller.rb:11:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 10:43:56 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 17.7ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:44:02 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pZpHn2O+PapT5v6iV/z1yuaaFBA0r6bAqtgIntaKlc2gCJjTWIwCQ43PrylDH20RRtZKPVfAQxWMCcDJC8e5TA==", "registrations"=>{"name"=>"asdfsafd", "last_name"=>"fdsafsadf", "email"=>"fdsafsafd", "phone"=>"asdfasdfas", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 3ms
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: email):
+  
+app/controllers/registrations_controller.rb:11:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:45:30 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pZpHn2O+PapT5v6iV/z1yuaaFBA0r6bAqtgIntaKlc2gCJjTWIwCQ43PrylDH20RRtZKPVfAQxWMCcDJC8e5TA==", "registrations"=>{"name"=>"asdfsafd", "last_name"=>"fdsafsadf", "email"=>"fdsafsafd", "phone"=>"asdfasdfas", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1)):
+  
+app/controllers/registrations_controller.rb:11:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:48:49 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pZpHn2O+PapT5v6iV/z1yuaaFBA0r6bAqtgIntaKlc2gCJjTWIwCQ43PrylDH20RRtZKPVfAQxWMCcDJC8e5TA==", "registrations"=>{"name"=>"asdfsafd", "last_name"=>"fdsafsadf", "email"=>"fdsafsafd", "phone"=>"asdfasdfas", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1)):
+  
+app/controllers/registrations_controller.rb:11:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-17 10:48:57 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.9ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 10:49:02 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 37ms (Views: 35.4ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:49:16 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qoGN1L5SFNY+lA1qfOY36VTRT6xgCc4NHREFQJJBmL1mqth9dJCwAQj9SWjDvt3YplQcmWjaE+ClflAbMGaUiQ==", "registrations"=>{"name"=>"219512", "last_name"=>"3251261", "email"=>"2651566", "phone"=>"32512651", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 5, expected 1)):
+  
+app/controllers/registrations_controller.rb:11:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:49:37 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qoGN1L5SFNY+lA1qfOY36VTRT6xgCc4NHREFQJJBmL1mqth9dJCwAQj9SWjDvt3YplQcmWjaE+ClflAbMGaUiQ==", "registrations"=>{"name"=>"219512", "last_name"=>"3251261", "email"=>"2651566", "phone"=>"32512651", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 400 Bad Request in 6ms
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/registrations_controller.rb:11:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 10:54:43 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 22.6ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:56:40 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XKPBQ69w6RW5IGPmZZ0aV2edB2iVoCfkx1gyEqt7jbc4FBJNY/8TYjN0ASNdeyy/dIqMME5ZUq1zKifl+DCtw==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"sadfsaf", "phone"=>"sdfsafa", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 55ms (ActiveRecord: 3.0ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:57:11 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2XKPBQ69w6RW5IGPmZZ0aV2edB2iVoCfkx1gyEqt7jbc4FBJNY/8TYjN0ASNdeyy/dIqMME5ZUq1zKifl+DCtw==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"sadfsaf", "phone"=>"sdfsafa", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 10:57:14 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 10:57:42 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kjtm4AMupjgtV73XDPwrznb0jH+ypgG6vRK0qWwPeOcvqbmsOByZ0fN+7FwYH7MV1rjSUtHJ5G+bw3z+sUJUZg==", "registrations"=>{"name"=>"Gustavo", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"982607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:05:01 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:05:03 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7O8EZb2oEOYfv9BnlYJdFHjbAsXfpl60bBVn28xV2J3pfdsphpovD8GWgeyBYcXP2Jdc6LzJu2FKxK+MERj0HA==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:05:18 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:05:40 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"97qWJWcnuvD18/Q49Sp5+6MfWvGba5Cltqr7fhOWooXyKElpXBWFGSvapbPhyeEgA1ME3PgEdXCQezMpztuOBA==", "registrations"=>{"name"=>"fava", "last_name"=>"efefe", "email"=>"asdfsad@gmial.com", "phone"=>"151651315", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:09:33 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 27ms (Views: 26.1ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:09:52 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H1ZhUjzOGHp62hp7Hh9V2lAR2J8jvsXGF8cAoYwoh+kaxL4eB/wnk6TzS/AK/M0B8F2GskDRIBMxFsj2UWWraA==", "registrations"=>{"name"=>"Gustavo", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"+56982607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 20ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:11:02 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H1ZhUjzOGHp62hp7Hh9V2lAR2J8jvsXGF8cAoYwoh+kaxL4eB/wnk6TzS/AK/M0B8F2GskDRIBMxFsj2UWWraA==", "registrations"=>{"name"=>"Gustavo", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"+56982607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 23ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:11:24 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:11:54 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gmmA1vwZaUuiy7SPuMYXhGS4YikxJ+MW9XhITm9QaACH+1+axytWonzi5QSsJY9fxPQ8BFJIBsPTqYAZsh1EgQ==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"982607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:12:41 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gmmA1vwZaUuiy7SPuMYXhGS4YikxJ+MW9XhITm9QaACH+1+axytWonzi5QSsJY9fxPQ8BFJIBsPTqYAZsh1EgQ==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"982607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 30ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 11:12:41 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 11:12:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:12:44 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:12:59 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s0FkrPh27uy7Lk04K4/7wbXmq+jJySoNsiJx7+5TtAV/ajEFMrRKO41HCTqU1xHwR2P43cEa9+AKTSS0THS4MQ==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"fdsafsafd", "phone"=>"sdfasfdsa", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 11:12:59 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 11:12:59 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:13:04 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:13:05 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ocn2XEhn0sBb3pTl3cDaGIc43/lMSSiMtSvu9MwaHx5t4qP1gqV2F2230OdimDApdb2MzESa9WENRLuvbj0TKg==", "registrations"=>{"name"=>"", "last_name"=>"", "email"=>"", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 11:13:05 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 11:13:05 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:13:07 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:13:58 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IYflGFXgu9LRC9krtuBWqlm9+tgfIJPcJd42hi6MBN/trLCxnyIfBedinSkJuLybqzip7RfzTjGdsWPdjKsI6w==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"82607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 11:13:58 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 11:13:58 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:14:05 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 15.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:14:08 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gvZSqdMJhe8imsMk44G5029x7+Z0ocKWY2y7hGm0KoyHZI3l6Du6Bvyzkq/3YiEIzz2xyxfOJ0NFvXPTtPkGDQ==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"82607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:21:49 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gvZSqdMJhe8imsMk44G5029x7+Z0ocKWY2y7hGm0KoyHZI3l6Du6Bvyzkq/3YiEIzz2xyxfOJ0NFvXPTtPkGDQ==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"82607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Unpermitted parameters: :utf8, :authenticity_token, :registrations, :commit
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email can't be blank, Email is invalid, Password assword must be between 8 to 12 alphanumeric characters):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:24:46 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gvZSqdMJhe8imsMk44G5029x7+Z0ocKWY2y7hGm0KoyHZI3l6Du6Bvyzkq/3YiEIzz2xyxfOJ0NFvXPTtPkGDQ==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"82607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gpvicuna@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 21ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Phone is too short (minimum is 9 characters)):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:24:53 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gvZSqdMJhe8imsMk44G5029x7+Z0ocKWY2y7hGm0KoyHZI3l6Du6Bvyzkq/3YiEIzz2xyxfOJ0NFvXPTtPkGDQ==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"826078309", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gpvicuna@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gustavo Vicuña"], ["last_name", "Vicuña"], ["email", "gpvicuna@miuandes.cl"], ["phone", "826078309"], ["password", "asdfsadfaf"], ["created_at", "2018-04-17 14:24:53.763353"], ["updated_at", "2018-04-17 14:24:53.763353"]]
+  [1m[35m (59.6ms)[0m  [1m[36mcommit transaction[0m
+No template found for RegistrationsController#create, rendering head :no_content
+Completed 204 No Content in 79ms (ActiveRecord: 60.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 11:34:20 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 127ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:34:22 -0300
+  
+SyntaxError (/home/gus/Desktop/uandes/web/lab6/lab-assignment-6-gusvicuna/app/controllers/registrations_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/registrations_controller.rb:17: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 11:34:36 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 62ms (Views: 36.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:35:03 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"982607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gpvicuna@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:36:12 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuandes.cl", "phone"=>"982607830", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 73ms
+
+
+  
+NameError (undefined local variable or method `user' for #<RegistrationsController:0x007fea2d4da188>):
+  
+app/controllers/registrations_controller.rb:12:in `create_params'
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:40:08 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"sadfsaf@fdsf.cl", "phone"=>"2345565565", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sadfsaf@fdsf.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gustavo Vicuña"], ["last_name", "Vicuña"], ["email", "sadfsaf@fdsf.cl"], ["phone", "2345565565"], ["password", "123213212"], ["created_at", "2018-04-17 14:40:09.058370"], ["updated_at", "2018-04-17 14:40:09.058370"]]
+  [1m[35m (49.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 51.5ms)
+
+
+  
+NoMethodError (undefined method `save?' for #<User:0x0055ae57b25628>):
+  
+app/controllers/registrations_controller.rb:8:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:42:17 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"sadfsaf@fdsf.cl", "phone"=>"2345565565", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sadfsaf@fdsf.cl"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 16ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:49:08 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"sadfsaf@fdsf.cl", "phone"=>"2345565565", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sadfsaf@fdsf.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 20ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:49:33 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"sadfsaf@fdsf.cl", "phone"=>"2345565565", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sadfsaf@fdsf.cl"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 27ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:54:45 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"sadfsaf@fdsf.cl", "phone"=>"2345565565", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sadfsaf@fdsf.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 20ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:7:in `create'
