@@ -25,27 +25,31 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.create(params[:user])
+    @user = User.create(user_params))
+    flash[:notice]  ="User created"
   end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    usuario = user.find(params[:id])
-    usuario.update!(user_params)
-    redirect_to usuario
+    if @user.update(user_params)
+      flash[:notice] = "User Updated."
+    else
+      flash[:notice]="There was an error"
   end
 
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    #complete this method
+    @user = User.find(params[:user])
+    @user.destroy
+    redirect_to users_url
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      @user = User.find(params[:user])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
