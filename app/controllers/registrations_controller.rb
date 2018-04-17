@@ -4,9 +4,9 @@ class RegistrationsController < ApplicationController
 	end
 
 	def create
-	    user = User.create!(create_params)
+	    user = User.new(create_params)
 			if user.save
-				redirect_to root_url
+				redirect_to root_url, notice: "Signed in succesfully"
 			else
 				redirect_to registrations_url
 			end

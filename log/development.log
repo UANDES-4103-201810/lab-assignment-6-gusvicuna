@@ -1996,3 +1996,76 @@ Completed 422 Unprocessable Entity in 20ms (ActiveRecord: 1.3ms)
 ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
   
 app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 11:59:47 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuan2.cl", "phone"=>"3453434534", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gpvicuna@miuan2.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gustavo Vicuña"], ["last_name", "Vicuña"], ["email", "gpvicuna@miuan2.cl"], ["phone", "3453434534"], ["password", "asdfasdfars"], ["created_at", "2018-04-17 14:59:48.122936"], ["updated_at", "2018-04-17 14:59:48.122936"]]
+  [1m[35m (39.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 40.4ms)
+
+
+  
+NoMethodError (undefined method `create' for #<User:0x007f5f30a4beb0>):
+  
+app/controllers/registrations_controller.rb:8:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 12:01:49 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuan2.cl", "phone"=>"3453434534", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gpvicuna@miuan2.cl"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 22ms (ActiveRecord: 2.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 12:03:35 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BiMspIHNs9AwTUxPwJi8rxQ/STmNPuHmmpJkBGM1b5EDsfPouv+MOe5kHcTUeyR0tHMXFO5RBDO8Q6xTvnhDEA==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuan2.cl", "phone"=>"3453434534", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gpvicuna@miuan2.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 19ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-17 16:50:46 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (249.3ms)
+Completed 200 OK in 955ms (Views: 950.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 16:50:50 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 96ms (Views: 45.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 16:51:06 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KjwvxBHKfeirROqrj4tus2cElKRkhxtokFYHX7k7R5fmF3pt2wjZP50trqkw04SClYHHkWxUxoUoOVIEGxxLow==", "registrations"=>{"name"=>"Gustavo Vicuña", "last_name"=>"Vicuña", "email"=>"gpvicuna@miuan2.cl", "phone"=>"12341234124", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "gpvicuna@miuan2.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 16:51:06 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
