@@ -6,12 +6,11 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-	#complete this method
+	   @logedin_user = User.find(session[:user])
   end
 
   def is_user_logged_in?
-	#complete this method
-  	logged_in = false
+  	logged_in = !session[:user].nil?
 	if logged_in then true else redirect_to root_path end
   end
 end
